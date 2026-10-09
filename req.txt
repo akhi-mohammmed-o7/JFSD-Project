@@ -1,0 +1,128 @@
+You are my coding assistant for my Java Full Stack Development (JFSD) subject project.
+
+PROJECT TITLE:
+Product Catalog System
+
+PROJECT NUMBER:
+Project/Application 4 — Product Catalog System
+
+SOURCE OF TRUTH:
+The provided instructions are the authoritative source for this project.
+
+IMPORTANT:
+This is a subject-wise academic mini project. It is intentionally NOT a large portfolio project.
+My goal is to implement the Product Catalog System exactly according to these boundaries, make it fully functional, testable, clean, and understandable.
+DO NOT expand the project beyond what is specified here.
+
+==================================================
+1. PROJECT REQUIREMENT
+==================================================
+Objective:
+Build a Catalog Microservice that exposes REST APIs to manage product data:
+- Create
+- Read
+- Update
+- Delete
+
+The application should use Spring Boot and Spring MVC to handle HTTP requests and JSON responses.
+It should integrate with a database for persistent product storage.
+The application should be testable using Postman.
+
+==================================================
+2. TECHNOLOGY SCOPE
+==================================================
+Primary technologies:
+- Java 17
+- Spring Boot 3.2.4
+- Spring MVC / REST Controllers
+- Spring Data JPA
+- H2 database (embedded)
+- Maven
+- Postman
+
+Do not introduce:
+- React, Angular, Vue, or any frontend
+- Spring Security, JWT, authentication, or authorization
+- Docker or Kubernetes
+- MySQL, PostgreSQL, or MongoDB
+- Lombok or MapStruct
+- Extra microservice frameworks, Eureka, or API Gateways
+
+==================================================
+3. STRICT SCOPE CONTROL
+==================================================
+DO NOT add features to make the application "production-ready".
+Do NOT add: categories, users, roles, search, filtering, pagination, shopping cart, orders, image upload, or extra entities.
+Only implement the Product Catalog System.
+
+==================================================
+4. EXPECTED PROJECT STRUCTURE
+==================================================
+catalog-service/
+│
+├── pom.xml
+└── src/
+    └── main/
+        ├── java/
+            └── com/example/catalog/
+                ├── CatalogApplication.java
+                ├── model/
+                │   └── Product.java
+                ├── repository/
+                │   └── ProductRepository.java
+                └── controller/
+                    └── ProductController.java
+        └── resources/
+            ├── application.properties
+            └── data.sql (optional)
+
+==================================================
+5. PRODUCT MODEL
+==================================================
+The Product model MUST ONLY contain:
+- id (Long, Primary Key, Auto-generated)
+- name (String)
+- description (String)
+- price (Double)
+
+Do not add fields like category, SKU, createdAt, etc. Use standard Java getters, setters, and constructors (No Lombok).
+
+==================================================
+6. REST API
+==================================================
+Base endpoint: /api/products
+Implement:
+- GET /api/products (All products)
+- GET /api/products/{id} (Single product)
+- POST /api/products (Create product)
+- PUT /api/products/{id} (Update product)
+- DELETE /api/products/{id} (Delete product)
+
+==================================================
+7. DATABASE & MAVEN
+==================================================
+- Use H2 In-Memory Database.
+- Configure H2 through application.properties.
+- Keep the pom.xml minimal.
+
+==================================================
+8. IMPLEMENTATION ORDER
+==================================================
+Follow this exact order, verifying each step before moving to the next:
+PHASE 1: pom.xml setup.
+PHASE 2: CatalogApplication.java.
+PHASE 3: Product.java.
+PHASE 4: ProductRepository.java.
+PHASE 5: ProductController.java.
+PHASE 6: application.properties setup.
+PHASE 7: Run and test all endpoints via Postman.
+
+==================================================
+9. VIBE-CODING RULES
+==================================================
+For every change:
+1. Make the smallest necessary change.
+2. Do not modify unrelated files.
+3. Do not rewrite working code without a reason.
+4. If something fails, read the actual error, identify the root cause, and make the smallest fix.
+5. Wait for user confirmation before moving to the next Phase.

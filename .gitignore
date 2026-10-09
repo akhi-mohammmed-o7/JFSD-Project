@@ -1,0 +1,16 @@
+# Java / Maven
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/setuptools
+.vscode/ipch/
+
+# Postman local artifacts
+catalog-service/.postman/
+
+# OS
+Thumbs.db
+.DS_Store
