@@ -9,6 +9,7 @@ target/
 
 # Postman local artifacts
 catalog-service/.postman/
+catalog-service/postman/
 
 # OS
 Thumbs.db
