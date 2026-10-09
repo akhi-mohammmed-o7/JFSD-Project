@@ -5,8 +5,7 @@ target/
 # IDE
 .idea/
 *.iml
-.vscode/setuptools
-.vscode/ipch/
+.vscode/
 
 # Postman local artifacts
 catalog-service/.postman/
